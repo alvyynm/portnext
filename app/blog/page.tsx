@@ -5,3 +5,12 @@ export default function Blog() {
     </div>
   );
 }
+
+// Create static params for url slugs
+export function getStaticParams() {
+  return [
+    { slug: 'learn-to-code' },
+    { slug: 'angular-vs-react' },
+    { slug: 'typescript-for-dummies' }
+  ];
+}
